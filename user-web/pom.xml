@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>user</artifactId>
+        <groupId>com.my</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>user-web</artifactId>
+    <packaging>war</packaging>
+    <!-- 生成文档描述使用（项目名称）idea右侧mavne模块的名字 -->
+    <name>user-web</name>
+    <!-- 生成文档描述使用（项目url） -->
+    <url>http://localhost:8090/user/user</url>
+    <dependencies>
+        <!-- 添加对service的依赖 -->
+        <dependency>
+            <groupId>com.my</groupId>
+            <artifactId>user-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- servlet：使用父类版本 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+    </dependencies>
+</project>
